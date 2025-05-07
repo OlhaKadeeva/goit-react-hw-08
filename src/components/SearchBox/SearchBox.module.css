@@ -1,0 +1,15 @@
+.wraper {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1px;
+}
+input {
+  flex-grow: 1;
+  padding: 5px;
+}

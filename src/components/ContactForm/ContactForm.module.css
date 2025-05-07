@@ -1,0 +1,29 @@
+.form {
+  display: flex;
+  width: 350px;
+  min-height: 160px;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 10px;
+  border: 2px solid gray;
+  border-radius: 4px;
+}
+.formwrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  margin-bottom: 20px;
+}
+.contact {
+  margin: 5px 110px;
+  width: 120px;
+  padding: 5px;
+}
+.error {
+  position: absolute;
+  transform: translateY(280%);
+  color: red;
+  font-size: 0.8rem;
+}
