@@ -3,7 +3,7 @@ export default function HomePage() {
     <div style={{ padding: "20px" }}>
       <h1>Welcome to the Contact Book 📒</h1>
       <p>This app helps you save and manage your personal contacts.</p>
-      <p>Please register or log in to get started.</p>
+      <p>Please register or Login to get started.</p>
     </div>
   );
 }

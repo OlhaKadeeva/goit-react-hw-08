@@ -5,7 +5,7 @@ const Layout = () => {
   return (
     <>
       <AppBar />
-      <main style={{ padding: "20px" }}>
+      <main style={{ padding: "80px" }}>
         <Outlet />
       </main>
     </>

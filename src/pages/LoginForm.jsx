@@ -1,29 +1,34 @@
-import { useDispatch } from "react-redux";
 import { Formik, Form, Field } from "formik";
-import { login } from "../redux/auth/operations";
 
-export default function LoginForm() {
-  const dispatch = useDispatch();
+import css from "./LoginForm.module.css";
 
+export default function LoginForm({ onSubmit }) {
   const handleSubmit = (values, actions) => {
-    dispatch(login(values));
+    onSubmit(values);
     actions.resetForm();
   };
 
   return (
     <Formik initialValues={{ email: "", password: "" }} onSubmit={handleSubmit}>
-      <Form autoComplete="off">
+      <Form autoComplete="off" className={css.login_container}>
         <label>
           Email:
-          <Field type="email" name="email" required />
+          <Field type="email" name="email" className={css.imput} required />
         </label>
         <br />
         <label>
           Password:
-          <Field type="password" name="password" required />
+          <Field
+            type="password"
+            name="password"
+            className={css.imput}
+            required
+          />
         </label>
         <br />
-        <button type="submit">Log In</button>
+        <button type="submit" className={css.button}>
+          Log In
+        </button>
       </Form>
     </Formik>
   );
