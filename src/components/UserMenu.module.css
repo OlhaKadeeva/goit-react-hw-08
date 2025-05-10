@@ -1,0 +1,24 @@
+.wrapper {
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+.name {
+  text-align: center;
+  font-size: 1.6em;
+}
+.logOut {
+  border-radius: 4px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: #ecedf1;
+  background-color: #0077ff;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+.logOut:hover,
+.logOut:focus {
+  background-color: #005bcc;
+}

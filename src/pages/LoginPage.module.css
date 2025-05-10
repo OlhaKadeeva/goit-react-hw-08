@@ -1,11 +1,15 @@
 .form {
   width: 500px;
   margin: 0 auto;
-  padding: 20px;
 }
 
 .text {
   text-align: center;
-  font-size: 38px;
+  font-size: 3.2em;
   color: #333;
+}
+.error {
+  position: absolute;
+  color: #ff0000;
+  font-size: 0.8rem;
 }

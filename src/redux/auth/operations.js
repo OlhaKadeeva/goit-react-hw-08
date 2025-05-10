@@ -1,4 +1,3 @@
-// import axios from "axios";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
 import instance from "../api";
@@ -22,13 +21,16 @@ export const register = createAsyncThunk(
       setAuthHeader(res.data.token);
       return res.data;
     } catch (error) {
-      return thunkAPI.rejectWithValue(error.message);
+      if (error.response && error.response.status === 400) {
+        alert("This email already registered");
+      }
+      return thunkAPI.rejectWithValue(error.response.data);
     }
   }
 );
 
 // ЛОГІН
-export const login = createAsyncThunk(
+export const logIn = createAsyncThunk(
   "auth/login",
   async (credentials, thunkAPI) => {
     try {
@@ -36,13 +38,16 @@ export const login = createAsyncThunk(
       setAuthHeader(res.data.token);
       return res.data;
     } catch (error) {
+      if (error.response && error.response.status === 400) {
+        alert("Wrong login or password");
+      }
       return thunkAPI.rejectWithValue(error.message);
     }
   }
 );
 
 // ЛОГАУТ
-export const logout = createAsyncThunk("auth/logout", async (_, thunkAPI) => {
+export const logOut = createAsyncThunk("auth/logout", async (_, thunkAPI) => {
   try {
     await instance.post("/users/logout");
     clearAuthHeader();

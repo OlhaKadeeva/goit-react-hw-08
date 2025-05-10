@@ -31,7 +31,7 @@
   padding: 12px;
   font-size: 16px;
   background-color: #0077ff;
-  color: white;
+  color: #f9f9f9;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -40,4 +40,9 @@
 
 .button:hover {
   background-color: #005bcc;
+}
+.error {
+  position: absolute;
+  color: #ff0000;
+  font-size: 0.8rem;
 }

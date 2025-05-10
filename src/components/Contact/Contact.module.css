@@ -1,12 +1,14 @@
 .contacts {
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   height: 70px;
-  width: 350px;
-  border: 2px solid gray;
-  border-radius: 4px;
+  width: 370px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding-inline-start: 0;
-  padding: 4px 8px;
+  padding: 4px 20px;
 }
 .inform {
   display: flex;
@@ -27,6 +29,20 @@ p {
 .delete {
   display: block;
   height: 30px;
-  margin: 20px 7px;
+  margin: 20px 0;
   padding: 2px 8px;
+}
+.delete button {
+  border-radius: 4px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: #ecedf1;
+  background-color: #0077ff;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+.delete button:hover,
+.delete button:focus {
+  background-color: #005bcc;
 }

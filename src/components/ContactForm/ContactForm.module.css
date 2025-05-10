@@ -1,12 +1,14 @@
 .form {
+  box-sizing: border-box;
   display: flex;
-  width: 350px;
+  width: 370px;
   min-height: 160px;
   flex-direction: column;
   padding: 20px;
   margin-bottom: 10px;
-  border: 2px solid gray;
-  border-radius: 4px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .formwrap {
   position: relative;
@@ -15,11 +17,26 @@
 }
 .input {
   margin-bottom: 20px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 .contact {
   margin: 5px 110px;
   width: 120px;
   padding: 5px;
+  border-radius: 4px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: #ecedf1;
+  background-color: #0077ff;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+.contact:hover,
+.contact:focus {
+  background-color: #005bcc;
 }
 .error {
   position: absolute;
