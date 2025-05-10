@@ -9,23 +9,25 @@
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-.login-container label {
-  align-self: flex-start;
-  margin: 8px 0 4px;
+.label {
+  display: block;
+  margin-bottom: 8px;
+  margin-left: 10px;
   font-weight: 500;
-  color: #444;
+  color: #555;
 }
 .imput {
-  width: 100%;
+  width: 370px;
+  height: 50%;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  margin-bottom: 16px;
+  margin: 16px 5px;
   box-sizing: border-box;
 }
 .button {
-  width: 100%;
+  width: 50%;
   padding: 12px;
   font-size: 16px;
   background-color: #0077ff;

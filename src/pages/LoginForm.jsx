@@ -11,17 +11,24 @@ export default function LoginForm({ onSubmit }) {
   return (
     <Formik initialValues={{ email: "", password: "" }} onSubmit={handleSubmit}>
       <Form autoComplete="off" className={css.login_container}>
-        <label>
+        <label className={css.label}>
           Email:
-          <Field type="email" name="email" className={css.imput} required />
+          <Field
+            type="email"
+            name="email"
+            className={css.imput}
+            autoComplete="email"
+            required
+          />
         </label>
         <br />
-        <label>
+        <label className={css.label}>
           Password:
           <Field
             type="password"
             name="password"
             className={css.imput}
+            autoComplete="current-password"
             required
           />
         </label>
