@@ -22,7 +22,7 @@ export const register = createAsyncThunk(
       return res.data;
     } catch (error) {
       if (error.response && error.response.status === 400) {
-        alert("This email already registered");
+        alert("This email or name already registered");
       }
       return thunkAPI.rejectWithValue(error.response.data);
     }

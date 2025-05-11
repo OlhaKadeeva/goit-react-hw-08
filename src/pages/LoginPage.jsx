@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import LoginForm from "./LoginForm";
+import LoginForm from "../components/LoginForm/LoginForm";
 import { logIn } from "../redux/auth/operations";
 import css from "./LoginPage.module.css";
 

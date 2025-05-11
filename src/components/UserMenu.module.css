@@ -9,6 +9,9 @@
   font-size: 1.6em;
 }
 .logOut {
+  height: 1000%;
+  padding: 8px 20px;
+  margin: auto 0;
   border-radius: 4px;
   font-size: 1em;
   font-weight: 500;
